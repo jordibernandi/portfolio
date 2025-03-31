@@ -47,7 +47,7 @@ const Hero = () => {
               className="absolute left-[15%] top-[15%] transform -translate-x-1/2 -translate-y-1/2"
             >
               <Image
-                src={"/assets/hero/dev.png"}
+                src={"./assets/hero/dev.png"}
                 alt="Ignatius Jordi Bernandi"
                 width="384"
                 height="384"
