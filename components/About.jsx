@@ -9,7 +9,7 @@ const About = () => {
         <div className="flex items-center justify-center h-full">
           <div className="flex-1 hidden pl-8 xl:flex">
             <DotLottieReact
-              src="/assets/about/programmer.lottie"
+              src="assets/about/programmer.lottie"
               loop
               autoplay
             />
