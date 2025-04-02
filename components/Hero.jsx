@@ -47,7 +47,7 @@ const Hero = () => {
               className="absolute left-[15%] top-[15%] transform -translate-x-1/2 -translate-y-1/2"
             >
               <Image
-                src={"assets/hero/dev.png"}
+                src="/assets/hero/dev.png"
                 alt="Ignatius Jordi Bernandi"
                 width="384"
                 height="384"
@@ -64,7 +64,7 @@ const Hero = () => {
             data-scroll-speed="0.05"
           >
             <Image
-              src="assets/hero/arrow.svg"
+              src="/assets/hero/arrow.svg"
               width={160}
               height={160}
               alt=""
@@ -79,7 +79,7 @@ const Hero = () => {
             <RotatingShape
               content={
                 <Image
-                  src="assets/hero/shape-1.svg"
+                  src="/assets/hero/shape-1.svg"
                   width={38}
                   height={38}
                   alt=""
@@ -98,7 +98,7 @@ const Hero = () => {
             <RotatingShape
               content={
                 <Image
-                  src="assets/hero/shape-2.svg"
+                  src="/assets/hero/shape-2.svg"
                   width={34}
                   height={34}
                   alt=""
@@ -117,7 +117,7 @@ const Hero = () => {
             <RotatingShape
               content={
                 <Image
-                  src="assets/hero/shape-3.svg"
+                  src="/assets/hero/shape-3.svg"
                   width={36}
                   height={36}
                   alt=""

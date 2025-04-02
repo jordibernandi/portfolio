@@ -57,10 +57,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="pt-8 xl:pt-12 pb-32" id="contact">
+    <section className="pt-8 pb-32 xl:pt-12" id="contact">
       <div className="container mx-auto">
-        <div className="flex flex-col items-center xl:flex-row gap-16">
-          <div className="flex-1 mx-auto xl:mx-0 flex flex-col">
+        <div className="flex flex-col items-center gap-16 xl:flex-row">
+          <div className="flex flex-col flex-1 mx-auto xl:mx-0">
             <AnimatedText
               text="Let's Work Together"
               textStyles="h2 mb-12 text-center xl:text-left"
@@ -181,7 +181,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={state.submitting}
-                className="btn btn-accent flex items-center justify-center gap-2"
+                className="flex items-center justify-center gap-2 btn btn-accent"
               >
                 {state.submitting ? (
                   <span>Sending...</span>
@@ -189,15 +189,13 @@ const Contact = () => {
                   <>
                     {/* show icon with opacity transition */}
                     <FaCheckCircle
-                      className={`absolute text-white text-lg transition-opacity duration-500 ease-in-out ${
-                        showIcon ? "opacity-100" : "opacity-0"
-                      }`}
+                      className={`absolute text-white text-lg transition-opacity duration-500 ease-in-out ${showIcon ? "opacity-100" : "opacity-0"
+                        }`}
                     />
                     {/* button text */}
                     <span
-                      className={`transition-opacity duration-500 ease-in-out ${
-                        showIcon ? "opacity-0" : "opacity-100"
-                      }`}
+                      className={`transition-opacity duration-500 ease-in-out ${showIcon ? "opacity-0" : "opacity-100"
+                        }`}
                     >
                       Send message
                     </span>

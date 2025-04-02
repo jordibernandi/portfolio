@@ -9,7 +9,7 @@ const journey = [
     type: "experience",
     company: "commsult AG",
     location: "Potsdam, Germany",
-    logoUrl: "assets/journey/experience/commsultAG.png",
+    logoUrl: "/assets/journey/experience/commsultAG.png",
     position: "Software Developer",
     duration: "May 2022 - Present",
     description:
@@ -19,7 +19,7 @@ const journey = [
     type: "experience",
     company: "commsult Indonesia",
     location: "Tangerang, Indonesia",
-    logoUrl: "assets/journey/experience/commsultID.png",
+    logoUrl: "/assets/journey/experience/commsultID.png",
     position: "Software Developer",
     duration: "October 2018 - April 2022",
     description:
@@ -29,7 +29,7 @@ const journey = [
     type: "experience",
     company: "Userlutions GmbH",
     location: "Berlin, Germany",
-    logoUrl: "assets/journey/experience/userlutions.png",
+    logoUrl: "/assets/journey/experience/userlutions.png",
     position: "Web Developer",
     duration: "February 2017 - July 2017",
     description:
@@ -40,7 +40,7 @@ const journey = [
     type: "education",
     institution: "University of Mannheim",
     location: "Mannheim, Germany",
-    logoUrl: "assets/journey/education/unima.png",
+    logoUrl: "/assets/journey/education/unima.png",
     qualification: "Master's Degree in Data Science - Master of Science",
     duration: "2022 - 2025",
     description:
@@ -50,7 +50,7 @@ const journey = [
     type: "education",
     institution: "Swiss German University",
     location: "Tangerang, Indonesia",
-    logoUrl: "assets/journey/education/sgu.png",
+    logoUrl: "/assets/journey/education/sgu.png",
     qualification: "Bachelor's Degree in Information Technology - Bachelor of Engineering",
     duration: "2014 - 2018",
     description:
@@ -60,7 +60,7 @@ const journey = [
     type: "education",
     institution: "Fachhochschule Südwestfalen",
     location: "Soest, Germany",
-    logoUrl: "assets/journey/education/fhsoest.png",
+    logoUrl: "/assets/journey/education/fhsoest.png",
     qualification: "Bachelor's Degree in Industrial Engineering - Bachelor of Engineering",
     duration: "2017 - 2017",
     description:
