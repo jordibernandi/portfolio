@@ -2,13 +2,16 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { Link as ScrollLink } from "react-scroll";
+import { useRouter } from "next/router";
 
 // components
 import RotatingShape from "./RotatingShape";
 import Header from "./Header";
 
 const Hero = () => {
+
+  const { basePath } = useRouter();
+
   return (
     <section className="h-[800px] relative bg-accent/10 xl:bg-white" id="home">
       {/* header */}
@@ -30,9 +33,6 @@ const Hero = () => {
           <p className="lead max-w-[476px] mb-7">
             Passionate about software development and data-driven solutions.
           </p>
-          {/* <ScrollLink to="contact" smooth>
-            <button className="mb-8 btn btn-accent">Contact me</button>
-          </ScrollLink> */}
         </div>
         {/* image */}
         <div className="hidden xl:flex w-[55vw] h-[800px] absolute top-0 right-0 bg-accent">
@@ -47,7 +47,7 @@ const Hero = () => {
               className="absolute left-[15%] top-[15%] transform -translate-x-1/2 -translate-y-1/2"
             >
               <Image
-                src="/assets/hero/dev.png"
+                src={`${basePath}/assets/hero/dev.png`}
                 alt="Ignatius Jordi Bernandi"
                 width="384"
                 height="384"
