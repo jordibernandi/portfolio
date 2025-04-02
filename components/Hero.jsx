@@ -2,16 +2,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { useRouter } from "next/router";
+import { BASE_PATH } from "@/lib/global";
 
 // components
 import RotatingShape from "./RotatingShape";
 import Header from "./Header";
 
 const Hero = () => {
-
-  const { basePath } = useRouter();
-
   return (
     <section className="h-[800px] relative bg-accent/10 xl:bg-white" id="home">
       {/* header */}
@@ -47,7 +44,7 @@ const Hero = () => {
               className="absolute left-[15%] top-[15%] transform -translate-x-1/2 -translate-y-1/2"
             >
               <Image
-                src={`${basePath}/assets/hero/dev.png`}
+                src={`${BASE_PATH}/assets/hero/dev.png`}
                 alt="Ignatius Jordi Bernandi"
                 width="384"
                 height="384"

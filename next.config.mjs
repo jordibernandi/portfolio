@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // basePath: "",
-    basePath: "/portfolio",
     images: {
         unoptimized: true,
     },
