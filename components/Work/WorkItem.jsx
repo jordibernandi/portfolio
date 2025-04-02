@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { Badge } from "../ui/badge";
+import { BASE_PATH } from "@/lib/global";
 
 const WorkItem = ({ categories, img, title, description }) => {
   return (
     <div className="w-full h-[400px] md:h-[500px] rounded-lg flex flex-col mb-6 pb-6 bg-white overflow-hidden group shadow-custom">
       <div className="w-full h-[200px] relative overflow-hidden">
         <Image
-          src={img}
+          src={BASE_PATH + img}
           fill
           quality={100}
           className="object-cover transition-transform duration-500 group-hover:scale-105"

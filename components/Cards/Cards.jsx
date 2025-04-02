@@ -9,7 +9,7 @@ const journey = [
     type: "experience",
     company: "commsult AG",
     location: "Potsdam, Germany",
-    logoUrl: "/assets/journey/experience/commsultAG.png",
+    logoUrl: `/assets/journey/experience/commsultAG.png`,
     position: "Software Developer",
     duration: "May 2022 - Present",
     description:
