@@ -5,7 +5,7 @@ import { BASE_PATH } from "@/lib/global";
 
 const About = () => {
   return (
-    <section className="relative pt-24 pb-24" id="about">
+    <section className="relative pt-12 pb-12" id="about">
       <div className="container items-center h-full mx-auto">
         <div className="flex items-center justify-center h-full">
           <div className="flex-1 hidden pl-8 xl:flex">
