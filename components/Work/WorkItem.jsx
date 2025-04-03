@@ -5,8 +5,8 @@ import { BASE_PATH } from "@/lib/global";
 const WorkItem = ({ categories, img, title, description }) => {
   return (
     <div className="w-full h-[400px] md:h-[500px] rounded-lg flex flex-col mb-6 pb-6 bg-white overflow-hidden group shadow-custom">
-      <div className="w-full h-[200px] relative overflow-hidden">
-        <Image
+      <div className="w-full h-[200px] relative overflow-hidden bg-accent">
+        {/* <Image
           src={BASE_PATH + img}
           fill
           quality={100}
@@ -15,7 +15,7 @@ const WorkItem = ({ categories, img, title, description }) => {
           style={{
             transformOrigin: 'center',
           }}
-        />
+        /> */}
         <div className="absolute inset-0 flex items-center justify-center text-2xl font-semibold text-center text-white bg-black/40">
           {title}
         </div>

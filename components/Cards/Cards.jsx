@@ -41,7 +41,7 @@ const journey = [
     institution: "University of Mannheim",
     location: "Mannheim, Germany",
     logoUrl: "/assets/journey/education/unima.png",
-    qualification: "Master's Degree in Data Science - Master of Science",
+    qualification: "Master's Degree in Data Science",
     duration: "2022 - 2025",
     description:
       "My pursuit of a Master's in Data Science at the University of Mannheim has equipped me with expertise in data analytics and machine learning, primarily using Python. This academic journey has equipped me with experiences in the complete machine learning workflow, from data preprocessing to visualization.",
@@ -51,7 +51,7 @@ const journey = [
     institution: "Swiss German University",
     location: "Tangerang, Indonesia",
     logoUrl: "/assets/journey/education/sgu.png",
-    qualification: "Bachelor's Degree in Information Technology - Bachelor of Engineering",
+    qualification: "Bachelor's Degree in Information Technology",
     duration: "2014 - 2018",
     description:
       "Graduated cum laude, gaining strong programming skills and a solid foundation in software development. Proficient in multiple programming languages, including PHP, C++, C#, Java, JavaScript, CSS, HTML, and Data Structures & Algorithms, serving as a stepping stone for my career as a programmer.",
@@ -61,7 +61,7 @@ const journey = [
     institution: "Fachhochschule Südwestfalen",
     location: "Soest, Germany",
     logoUrl: "/assets/journey/education/fhsoest.png",
-    qualification: "Bachelor's Degree in Industrial Engineering - Bachelor of Engineering",
+    qualification: "Bachelor's Degree in Industrial Engineering",
     duration: "2017 - 2017",
     description:
       "Earned a Bachelor of Engineering in Wirtschaftsingenieurwesen through a double degree exchange program. Gained hands-on experience in industrial business practices during the study period.",
