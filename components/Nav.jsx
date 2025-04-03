@@ -15,7 +15,7 @@ const links = [
     name: "skills",
   },
   {
-    name: "work",
+    name: "projects",
   },
 ];
 

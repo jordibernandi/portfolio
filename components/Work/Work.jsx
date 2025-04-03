@@ -108,10 +108,10 @@ const Work = () => {
   };
 
   return (
-    <section className="pt-12 pb-24 min-h-[1000px]" id="work">
+    <section className="pt-12 pb-24 min-h-[1000px]" id="projects">
       <div className="container mx-auto">
         <AnimatedText
-          text="My Projects"
+          text="My Personal Projects"
           textStyles="h2 mb-[30px] text-center"
         />
         <Tabs defaultValue="all" className="flex flex-col items-center w-full">
