@@ -47,7 +47,7 @@ const Card = ({
                   <p className="text-base">{location}</p>
                 </div>
                 <div
-                  className="text-justify text-base max-w-[660px]"
+                  className="text-base max-w-[660px]"
                   dangerouslySetInnerHTML={{ __html: description }}
                 />
               </div>
