@@ -12,8 +12,14 @@ const journey = [
     logoUrl: `/assets/journey/experience/commsultAG.png`,
     position: "Software Developer",
     duration: "May 2022 - Present",
-    description:
-      "Supported ERP system development for a German telecom client, handling JIRA issues, feature implementation, bug fixes, and JUnit testing. Worked with Java OOP, JavaScript, React, SQL, XML, HTML, and CSS. Collaborated with Potsdam colleagues for efficient teamwork and knowledge sharing.",
+    description: `
+      <ul>
+        <li><b>Project Assignment:</b> Support the development of an ERP system.</li>
+        <li><b>Issue Resolution:</b> Address client-reported issues via JIRA, including developing new features, fixing bugs, and creating JUnit tests to ensure robust functionality.</li>
+        <li><b>Daily Technologies:</b> Work extensively with Java OOP, OracleDB, MySQL, XML, JavaScript, HTML, CSS and ReactJS.</li>
+        <li><b>Collaboration:</b> Collaborate with colleagues in the Potsdam office while working remotely, ensuring effective communication and teamwork.</li>
+      </ul>
+    `
   },
   {
     type: "experience",
@@ -22,8 +28,19 @@ const journey = [
     logoUrl: "/assets/journey/experience/commsultID.png",
     position: "Software Developer",
     duration: "October 2018 - April 2022",
-    description:
-      "Worked as a full-stack developer with JavaScript, TypeScript, ReactJS, NodeJS, HTML, CSS, and SQL/NoSQL databases. Led a team developing a PWA using SAP data, collaborating with clients and UX designers. Contributed to key projects, including a hotel management system, a warehouse admin dashboard, and an R&D prototype for no-code mobile app creation, exploring new libraries and architectures.",
+    description: `
+      <ul>
+        <li><b>Full Stack Development:</b> Utilized JavaScript, TypeScript, ReactJS, ExpressJS, NodeJS, MongoDB, PostgreSQL, REST API, HTML, and CSS.</li>
+        <li><b>Team Leadership and Client Interaction:</b> Led a team in creating a front-end progressive web application for an attendance system. Interacted directly with clients to provide updates and feedback.</li>
+        <li><b>Collaboration:</b> Worked closely with UX designers to implement new system designs, ensuring seamless integration and functionality across all projects.</li>
+        <li><b>Key Projects Developed:</b> 
+          <ul>
+            <li><u>Hotel Software Management System:</u> Developed new features focused on booking, accounting systems (<a href="https://youtu.be/nIJs40OxmqY" target="_blank">demo 1</a>, <a href="https://youtu.be/Ml8uLgmF2z4" target="_blank">demo 2</a>), and <a href="https://youtu.be/L5fvSbqtNOg" target="_blank">product profile website</a>.</li>
+            <li><u>Admin Dashboard: </u> Developed comprehensive admin dashboards to streamline warehouse management operations.</li>
+            <li><u>Prototype R&D:</u> Conducted research and development for a new <a href="https://youtu.be/1o2QryrFfsw" target="_blank">desktop application</a> to create mobile applications without coding. Explored various libraries, approaches, and data architecture solutions.</li>
+        </li>
+      </ul>
+    `
   },
   {
     type: "experience",
@@ -32,8 +49,13 @@ const journey = [
     logoUrl: "/assets/journey/experience/userlutions.png",
     position: "Web Developer",
     duration: "February 2017 - July 2017",
-    description:
-      "Contributed to the development and redesign of Crowdtesting Services at rapidusertests.com using HTML, CSS, JavaScript, and Laravel. Worked with UX designers to ensure seamless integration, developed new features, enhanced functionalities, and fixed bugs to improve user experience and performance.",
+    description: `
+      <ul>
+        <li><b>Development and Redesign:</b> Contributed to the development and redesign of Crowdtesting Services at <a href="https://rapidusertests.com" target="_blank">rapidusertests.com</a> using HTML, CSS, JavaScript, and Laravel PHP framework.</li>
+        <li><b>Collaboration:</b> Collaborated closely with UX designers to implement new system designs, ensuring seamless integration and functionality.</li>
+        <li><b>Feature Development:</b> Developed new features and resolved system issues by enhancing functionalities and fixing bugs.</li>
+      </ul>
+    `
   },
   // education
   {
@@ -79,38 +101,25 @@ const Cards = () => {
           <TabsTrigger value="experience">Experience</TabsTrigger>
           <TabsTrigger value="education">Education</TabsTrigger>
         </TabsList>
-        <TabsContent value="experience" className="w-full">
-          <AnimatePresence>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
-              transition={{ duration: 0.3 }}
-            >
-              {journey
-                .filter((item) => item.type === "experience")
-                .map((card, index) => {
-                  return <Card key={index} {...card} />;
-                })}
-            </motion.div>
-          </AnimatePresence>
-        </TabsContent>
-        <TabsContent value="education" className="w-full">
-          <AnimatePresence>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
-              transition={{ duration: 0.3 }}
-            >
-              {journey
-                .filter((item) => item.type === "education")
-                .map((card, index) => {
-                  return <Card key={index} {...card} />;
-                })}
-            </motion.div>
-          </AnimatePresence>
-        </TabsContent>
+        {["experience", "education"].map(value => (
+          <TabsContent key={value} value={value} className="w-full">
+            <AnimatePresence>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ duration: 0.3 }}
+                className="grid grid-cols-1 gap-6"
+              >
+                {journey
+                  .filter((item) => item.type === value)
+                  .map((card, index) => {
+                    return <Card key={index} {...card} />;
+                  })}
+              </motion.div>
+            </AnimatePresence>
+          </TabsContent>
+        ))}
       </Tabs>
     </>
   );

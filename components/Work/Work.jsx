@@ -8,7 +8,7 @@ import WorkItem from "./WorkItem";
 const data = [
   {
     href: "",
-    categories: ["Python", "Flask", "Visualisation", "Analysis", "React.JS", "HTML", "CSS", "LLM"],
+    categories: ["Python", "Flask", "Visualisation", "Analysis", "ReactJS", "LLM"],
     img: "/assets/work/",
     title: "Flu Analytical Dashboard",
     description: "Developed an analytical dashboard displaying vaccination rates across German regions for the STADS Datathon challenge (CGM), featuring analytical graphs and LLM-driven analysis with predictive insights."
@@ -22,14 +22,7 @@ const data = [
   },
   {
     href: "",
-    categories: ["PHP", "Laravel", "SQL", "HTML", "CSS"],
-    img: "/assets/work/",
-    title: "Church Event Registration System",
-    description: "Developed a church event registration system using PHP Laravel and MySQL, enabling seamless attendee management. Implemented Excel data import for participant registration and QR code generation, allowing entry validation via laptop webcam scanning."
-  },
-  {
-    href: "",
-    categories: ["Python", "JavaScript", "React.JS", "SQL", "Prisma", "NLP", "LLM", "Docker", "Visualisation", "Analysis"],
+    categories: ["Python", "JavaScript", "ReactJS", "SQL", "Prisma", "NLP", "LLM", "Docker", "Visualisation", "Analysis"],
     img: "/assets/work/",
     title: "Decoding YouTube Political Content",
     description: "Created a novel dataset of 10,000 YouTube political transcripts, presented it via a web application, and conducted topic modelling using LLM. Utilised Python, speech recognition, speaker diarization, embeddings."
@@ -43,13 +36,6 @@ const data = [
   },
   {
     href: "",
-    categories: ["Python", "Streamlit", "NLP", "LLM", "Visualisation", "Analysis"],
-    img: "/assets/work/",
-    title: "Price Shocks Prediction",
-    description: "Developed a model for the STADS Datathon challenge (MSG Group) to predict Dow Jones fluctuations by analysing news articles and key factors, with results displayed on a user-friendly interface. Utilised Python, Streamlit, embeddings, linear regression, and LLM."
-  },
-  {
-    href: "",
     categories: ["Python", "Streamlit", "Flask", "NLP", "LLM"],
     img: "/assets/work/",
     title: "Movie Recommender System",
@@ -57,24 +43,38 @@ const data = [
   },
   {
     href: "",
-    categories: ["PHP", "SQL", "HTML", "CSS"],
+    categories: ["Python", "Streamlit", "NLP", "LLM", "Visualisation", "Analysis"],
+    img: "/assets/work/",
+    title: "Price Shocks Prediction",
+    description: "Developed a model for the STADS Datathon challenge (MSG Group) to predict Dow Jones fluctuations by analysing news articles and key factors, with results displayed on a user-friendly interface. Utilised Python, Streamlit, embeddings, linear regression, and LLM."
+  },
+  {
+    href: "",
+    categories: ["Python", "JavaScript", "ReactJS", "NLP"],
+    img: "/assets/work/",
+    title: "Symptom Checker AI Chatbot",
+    description: "Developed an AI chatbot to check symptoms for the STADS Datathon challenge (PHOENIX Group) by integrating a disease database with LLM, leveraging ReacJS, Flask, and embedding techniques."
+  },
+  {
+    href: "",
+    categories: ["JavaScript", "ReactJS", "NodeJS", "NoSQL"],
+    img: "/assets/work/",
+    title: "Warehouse Management System",
+    description: "Developed a system to manage a company's warehouse operations for stock monitoring, using ReacJS, ExpresJS and MongoDB."
+  },
+  {
+    href: "",
+    categories: ["PHP", "Laravel", "SQL"],
+    img: "/assets/work/",
+    title: "Church Event Registration System",
+    description: "Developed a church event registration system using PHP Laravel and MySQL, enabling seamless attendee management. Implemented Excel data import for participant registration and QR code generation, allowing entry validation via laptop webcam scanning."
+  },
+  {
+    href: "",
+    categories: ["PHP", "SQL"],
     img: "/assets/work/",
     title: "SGU Oktoberfest Registration System",
     description: "Developed a web-based registration system for SGU Oktoberfest to streamline event management and attendee sign-ups, using PHP and MySQL."
-  },
-  {
-    href: "",
-    categories: ["Python", "JavaScript", "React.JS", "HTML", "CSS", "NLP"],
-    img: "/assets/work/",
-    title: "Symptom Checker AI Chatbot",
-    description: "Developed an AI chatbot to check symptoms for the STADS Datathon challenge (PHOENIX Group) by integrating a disease database with LLM, leveraging ReactJS, Flask, and embedding techniques."
-  },
-  {
-    href: "",
-    categories: ["JavaScript", "React.JS", "Node.JS", "HTML", "CSS", "NoSQL"],
-    img: "/assets/work/",
-    title: "Warehouse Management System",
-    description: "Developed a system to manage a company's warehouse operations for stock monitoring, using ReactJS, ExpressJS and MongoDB."
   },
 ];
 

@@ -6,12 +6,12 @@ const services = [
   {
     icon: <MdLanguage />,
     title: "Language",
-    description: "English - Fluent, German - B1, Indonesian - Native",
+    description: `<b>English</b> - Fluent, <b>German</b> - B1, <b>Indonesian</b> - Native`,
   },
   {
     icon: <MdSchool />,
     title: "Education",
-    description: "B.Eng. Information Technology, M.Sc. Data Science",
+    description: `<b>B.Eng.</b> Information Technology, <b>M.Sc.</b> Data Science`,
   },
 ];
 
@@ -32,7 +32,7 @@ const Services = () => {
                 <h3 className="text-[20px] text-primary font-semibold mb-3">
                   {service.title}
                 </h3>
-                <p className="text-[15px]">{service.description}</p>
+                <div className="text-[15px]" dangerouslySetInnerHTML={{ __html: service.description }} />
               </li>
             );
           })}
