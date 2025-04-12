@@ -4,11 +4,11 @@ import { useEffect } from "react";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
-import Journey from "@/components/Journey";
-import Work from "@/components/Work/Work";
+import Projects from "@/components/Project/Projects";
 import FixedMenu from "@/components/FixedMenu";
 import Footer from "@/components/Footer";
-import Skills from "@/components/Skills";
+import Skills from "@/components/Skill/Skills";
+import Journeys from "@/components/Journey/Journeys";
 
 const Home = () => {
   // implement locomotive scroll
@@ -26,9 +26,9 @@ const Home = () => {
       <FixedMenu />
       <Services />
       <About />
-      <Journey />
+      <Journeys />
       <Skills />
-      <Work />
+      <Projects />
       <Footer />
     </>
   );

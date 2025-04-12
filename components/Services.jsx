@@ -6,12 +6,12 @@ const services = [
   {
     icon: <MdLanguage />,
     title: "Language",
-    description: `<b>English</b> - Fluent, <b>German</b> - B1, <b>Indonesian</b> - Native`,
+    description: `<span class="service-span"><b>English</b> - Fluent</span>, <span class="service-span"><b>German</b> - B1</span>, <span class="service-span"><b>Indonesian</b> - Native</span>`,
   },
   {
     icon: <MdSchool />,
     title: "Education",
-    description: `<b>B.Eng.</b> Information Technology, <b>M.Sc.</b> Data Science`,
+    description: `<span class="service-span"><b>B.Eng.</b> Information Technology</span>, <span class="service-span"><b>M.Sc.</b> Data Science</span>`,
   },
 ];
 

@@ -2,83 +2,83 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import AnimatedText from "../AnimatedText";
-import WorkItem from "./WorkItem";
+import Project from "./Project";
 
 // sample data for projects with various categories
 const data = [
   {
     href: "",
     categories: ["Python", "Flask", "Visualisation", "Analysis", "ReactJS", "LLM"],
-    img: "/assets/work/",
+    img: "/assets/project/",
     title: "Flu Analytical Dashboard",
     description: "Developed an analytical dashboard displaying vaccination rates across German regions for the STADS Datathon challenge (CGM), featuring analytical graphs and LLM-driven analysis with predictive insights."
   },
   {
     href: "",
     categories: ["Python", "NLP", "Visualisation", "Analysis"],
-    img: "/assets/work/",
+    img: "/assets/project/",
     title: "Biases in Online Football Discussions",
     description: "Conducted an analysis of biases in Twitter football discussions to investigate correlations between sexism and various factors, employing NLP techniques such as Regex, NER, Sentiment Analysis, and Fuzzy Matching in Python."
   },
   {
     href: "",
-    categories: ["Python", "JavaScript", "ReactJS", "SQL", "Prisma", "NLP", "LLM", "Docker", "Visualisation", "Analysis"],
-    img: "/assets/work/",
+    categories: ["Python", "JavaScript", "ReactJS", "SQL", "Prisma", "NLP", "LLM", "Visualisation", "Analysis"],
+    img: "/assets/project/",
     title: "Decoding YouTube Political Content",
     description: "Created a novel dataset of 10,000 YouTube political transcripts, presented it via a web application, and conducted topic modelling using LLM. Utilised Python, speech recognition, speaker diarization, embeddings."
   },
   {
     href: "",
     categories: ["Java", "JavaScript", "Spring Boot"],
-    img: "/assets/work/",
+    img: "/assets/project/",
     title: "Email Assistant",
     description: "Developed a Gmail extension using LLM to generate AI-powered email replies based on tone and context. Built with Java, Spring Boot, and JavaScript."
   },
   {
     href: "",
     categories: ["Python", "Streamlit", "Flask", "NLP", "LLM"],
-    img: "/assets/work/",
+    img: "/assets/project/",
     title: "Movie Recommender System",
     description: "Developed a movie recommender for the STADS Data Bootcamp challenge, winning 1st place. Leveraged Netflix dataset to suggest movies based on user history and input prompts, with an interactive interface built using Python, Streamlit, Flask, and embeddings."
   },
   {
     href: "",
     categories: ["Python", "Streamlit", "NLP", "LLM", "Visualisation", "Analysis"],
-    img: "/assets/work/",
+    img: "/assets/project/",
     title: "Price Shocks Prediction",
     description: "Developed a model for the STADS Datathon challenge (MSG Group) to predict Dow Jones fluctuations by analysing news articles and key factors, with results displayed on a user-friendly interface. Utilised Python, Streamlit, embeddings, linear regression, and LLM."
   },
   {
     href: "",
     categories: ["Python", "JavaScript", "ReactJS", "NLP"],
-    img: "/assets/work/",
+    img: "/assets/project/",
     title: "Symptom Checker AI Chatbot",
     description: "Developed an AI chatbot to check symptoms for the STADS Datathon challenge (PHOENIX Group) by integrating a disease database with LLM, leveraging ReacJS, Flask, and embedding techniques."
   },
   {
     href: "",
     categories: ["JavaScript", "ReactJS", "NodeJS", "NoSQL"],
-    img: "/assets/work/",
+    img: "/assets/project/",
     title: "Warehouse Management System",
     description: "Developed a system to manage a company's warehouse operations for stock monitoring, using ReacJS, ExpresJS and MongoDB."
   },
   {
     href: "",
     categories: ["PHP", "Laravel", "SQL"],
-    img: "/assets/work/",
+    img: "/assets/project/",
     title: "Church Event Registration System",
     description: "Developed a church event registration system using PHP Laravel and MySQL, enabling seamless attendee management. Implemented Excel data import for participant registration and QR code generation, allowing entry validation via laptop webcam scanning."
   },
   {
     href: "",
     categories: ["PHP", "SQL"],
-    img: "/assets/work/",
+    img: "/assets/project/",
     title: "SGU Oktoberfest Registration System",
     description: "Developed a web-based registration system for SGU Oktoberfest to streamline event management and attendee sign-ups, using PHP and MySQL."
   },
 ];
 
-const Work = () => {
+const Projects = () => {
   // extract unique categories from the data
   const uniqueCategories = Array.from(
     new Set(data.flatMap((item) => item.categories))
@@ -95,8 +95,8 @@ const Work = () => {
   // number of items to show initially
   const [visibleItems, setVisibleItems] = useState(6);
 
-  // filter work items based on the selected tab
-  const filterWork =
+  // filter project items based on the selected tab
+  const filterProjects =
     tabValue === "all"
       ? data.filter((item) => !item.categories.includes("all"))
       : data.filter((item) => item.categories.includes(tabValue));
@@ -132,20 +132,20 @@ const Work = () => {
           <TabsContent value={tabValue} className="w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px] mt-4">
               <AnimatePresence>
-                {filterWork.slice(0, visibleItems).map((item, index) => (
+                {filterProjects.slice(0, visibleItems).map((item, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <WorkItem {...item} />
+                    <Project {...item} />
                   </motion.div>
                 ))}
               </AnimatePresence>
             </div>
             {/* load more button */}
-            {visibleItems < filterWork.length && (
+            {visibleItems < filterProjects.length && (
               <div className="flex justify-center mt-12">
                 <button onClick={loadMoreItems} className="btn btn-accent">
                   Load more
@@ -159,4 +159,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Projects;

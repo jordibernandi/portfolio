@@ -1,13 +1,15 @@
 "use client";
-import Card from "./Card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion, AnimatePresence } from "framer-motion";
+import Journey from "./Journey";
+import AnimatedText from "../AnimatedText";
 
-const journey = [
+const journeys = [
   // experience
   {
     type: "experience",
     company: "commsult AG",
+    link: "https://commsult.de/",
     location: "Potsdam, Germany",
     logoUrl: `/assets/journey/experience/commsultAG.png`,
     position: "Software Developer",
@@ -24,6 +26,7 @@ const journey = [
   {
     type: "experience",
     company: "commsult Indonesia",
+    link: "https://commsult.id/",
     location: "Tangerang, Indonesia",
     logoUrl: "/assets/journey/experience/commsultID.png",
     position: "Software Developer",
@@ -45,6 +48,7 @@ const journey = [
   {
     type: "experience",
     company: "Userlutions GmbH",
+    link: "https://userlutions.com/",
     location: "Berlin, Germany",
     logoUrl: "/assets/journey/experience/userlutions.png",
     position: "Web Developer",
@@ -61,6 +65,7 @@ const journey = [
   {
     type: "education",
     institution: "University of Mannheim",
+    link: "https://www.uni-mannheim.de/",
     location: "Mannheim, Germany",
     logoUrl: "/assets/journey/education/unima.png",
     qualification: "Master's Degree in Data Science",
@@ -71,6 +76,7 @@ const journey = [
   {
     type: "education",
     institution: "Swiss German University",
+    link: "https://sgu.ac.id/",
     location: "Tangerang, Indonesia",
     logoUrl: "/assets/journey/education/sgu.png",
     qualification: "Bachelor's Degree in Information Technology",
@@ -81,6 +87,7 @@ const journey = [
   {
     type: "education",
     institution: "Fachhochschule Südwestfalen",
+    link: "https://www.fh-swf.de/de/",
     location: "Soest, Germany",
     logoUrl: "/assets/journey/education/fhsoest.png",
     qualification: "Bachelor's Degree in Industrial Engineering",
@@ -90,39 +97,45 @@ const journey = [
   },
 ];
 
-const Cards = () => {
+const Journeys = () => {
   return (
-    <>
-      <Tabs
-        defaultValue="experience"
-        className="flex flex-col items-center w-full"
-      >
-        <TabsList className="max-w-max mb-[30px]">
-          <TabsTrigger value="experience">Experience</TabsTrigger>
-          <TabsTrigger value="education">Education</TabsTrigger>
-        </TabsList>
-        {["experience", "education"].map(value => (
-          <TabsContent key={value} value={value} className="w-full">
-            <AnimatePresence>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 20 }}
-                transition={{ duration: 0.3 }}
-                className="grid grid-cols-1 gap-6"
-              >
-                {journey
-                  .filter((item) => item.type === value)
-                  .map((card, index) => {
-                    return <Card key={index} {...card} />;
-                  })}
-              </motion.div>
-            </AnimatePresence>
-          </TabsContent>
-        ))}
-      </Tabs>
-    </>
+    <section className="pt-12 pb-12" id="journey">
+      <div className="container mx-auto">
+        <AnimatedText
+          text="My Professional Journey"
+          textStyles="h2 mb-[30px] text-center"
+        />
+        <Tabs
+          defaultValue="experience"
+          className="flex flex-col items-center w-full"
+        >
+          <TabsList className="max-w-max mb-[30px]">
+            <TabsTrigger value="experience">Experience</TabsTrigger>
+            <TabsTrigger value="education">Education</TabsTrigger>
+          </TabsList>
+          {["experience", "education"].map(value => (
+            <TabsContent key={value} value={value} className="w-full">
+              <AnimatePresence>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 20 }}
+                  transition={{ duration: 0.3 }}
+                  className="grid grid-cols-1 gap-6"
+                >
+                  {journeys
+                    .filter((item) => item.type === value)
+                    .map((journey, index) => {
+                      return <Journey key={index} {...journey} />;
+                    })}
+                </motion.div>
+              </AnimatePresence>
+            </TabsContent>
+          ))}
+        </Tabs>
+      </div>
+    </section>
   );
 };
 
-export default Cards;
+export default Journeys;
