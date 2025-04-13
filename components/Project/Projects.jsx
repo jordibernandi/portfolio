@@ -108,7 +108,7 @@ const Projects = () => {
           textStyles="h2 mb-[30px] text-center"
         />
         <Tabs defaultValue="all" className="flex flex-col items-center w-full">
-          <TabsList className="max-w-max mb-[30px] justify-center">
+          <TabsList className="max-w-max mb-[30px] flex flex-wrap justify-center">
             {tabData.map((item, index) => {
               return (
                 <TabsTrigger
