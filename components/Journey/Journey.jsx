@@ -54,10 +54,9 @@ const Journey = ({
                   </h3>
                   <p className="text-base">{location}</p>
                 </div>
-                <div
-                  className="text-base max-w-[660px]"
-                  dangerouslySetInnerHTML={{ __html: description }}
-                />
+                <div className="text-base max-w-[660px]">
+                  {description}
+                </div>
               </div>
             </div>
           </div>
