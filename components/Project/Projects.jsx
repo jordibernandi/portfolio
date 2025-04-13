@@ -11,7 +11,7 @@ const data = [
     categories: ["Python", "Flask", "Visualisation", "Analysis", "ReactJS", "LLM"],
     img: "/assets/project/flu-dashboard.jpeg",
     title: "Flu Analytical Dashboard",
-    description: "Developed an analytical dashboard displaying vaccination rates across German regions for the STADS Datathon challenge (CGM), featuring analytical graphs and LLM-driven analysis with predictive insights."
+    description: "Developed an analytical dashboard displaying vaccination rates across German regions for the STADS Datathon 24 hours challenge (CGM), featuring analytical graphs and LLM-driven analysis with predictive insights."
   },
   {
     link: "https://github.com/jordibernandi/team_project23",
