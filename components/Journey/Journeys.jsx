@@ -43,6 +43,13 @@ const journeys = [
             <li><u>Prototype R&D:</u> Conducted research and development for a new <a href="https://youtu.be/1o2QryrFfsw" target="_blank">desktop application</a> to create mobile applications without coding. Explored various libraries, approaches, and data architecture solutions.</li>
         </li>
       </ul>
+      <center>
+        <img 
+          src="/assets/journey/experience/commsultID-colleagues.jpeg" 
+          alt="Userlutions colleagues" 
+          style="margin-top: 20px; max-width: 350px; height: auto; border-radius: 10px;" 
+        />
+      </center>
     `
   },
   {
@@ -59,6 +66,13 @@ const journeys = [
         <li><b>Collaboration:</b> Collaborated closely with UX designers to implement new system designs, ensuring seamless integration and functionality.</li>
         <li><b>Feature Development:</b> Developed new features and resolved system issues by enhancing functionalities and fixing bugs.</li>
       </ul>
+      <center>
+        <img 
+          src="/assets/journey/experience/userlutions-colleagues.jpeg" 
+          alt="Userlutions colleagues" 
+          style="margin-top: 20px; max-width: 350px; height: auto; border-radius: 10px;" 
+        />
+      </center>
     `
   },
   // education

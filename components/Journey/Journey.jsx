@@ -33,11 +33,16 @@ const Journey = ({
           </div>
           <div className="flex items-center justify-center flex-1 pb-8 xl:justify-start md:px-16">
             <div className="flex flex-col items-center gap-4 px-4 text-center xl:flex-row xl:items-start xl:text-left xl:gap-10 xl:px-0">
-              <div className="relative w-[300px] h-[100px] xl:h-[106px]">
-                <a href={link} target="_blank">
-                  <Image src={BASE_PATH + logoUrl} fill alt="" className="object-contain" />
-                </a>
-              </div>
+              <a href={link} target="_blank">
+                <div className="relative w-[300px] h-[100px] xl:h-[106px]">
+                  <Image
+                    src={BASE_PATH + logoUrl}
+                    fill
+                    alt=""
+                    className="object-contain"
+                  />
+                </div>
+              </a>
               <div className="w-full xl:border-l xl:border-secondary/10 xl:pl-12">
                 <div className="items-center hidden gap-2 mb-2 xl:flex-row xl:flex xl:mb-4">
                   <h3 className="h3">

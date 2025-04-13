@@ -32,7 +32,7 @@ const Skills = () => {
                 <div className="grid flex-1 grid-cols-1 gap-6 sm:grid-cols-2">
                     <AnimatePresence>
                         {skills.map((skill, index) => (
-                            <Skill index={index} skill={skill} />
+                            <Skill key={index} index={index} skill={skill} />
                         ))}
                     </AnimatePresence>
                 </div>
