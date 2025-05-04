@@ -7,6 +7,20 @@ import Project from "./Project";
 // sample data for projects with various categories
 const data = [
   {
+    link: "https://youtu.be/I1zPA81g_rc",
+    categories: ["Python", "ReactJS", "Flask", "NLP", "LLM"],
+    img: "/assets/project/hotel-recommender.jpeg",
+    title: "Hotel Recommender System",
+    description: "Developed a natural language hotel recommender in the 36-hour Makeathon (CHECK24), using AI agents for preference extraction (Entity Matching + Schema Mapping) with Python, Flask, and ReactJS."
+  },
+  {
+    link: "https://youtu.be/Nqmb_towOLI",
+    categories: ["Python", "ReactJS", "Flask", "NLP", "LLM"],
+    img: "/assets/project/consultant-recommender.jpeg",
+    title: "Consultant Recommender System",
+    description: "Developed a consultant recommender system in the 24-hour Q-Hack (Exxeta), earning 2nd place in the challenge. Used multi-agent LLMs to analyze and prioritize project features, leveraging Python, Flask, and ReactJS"
+  },
+  {
     link: "https://youtu.be/kMFi3mTtCaA",
     categories: ["Python", "Flask", "Visualisation", "Analysis", "ReactJS", "LLM"],
     img: "/assets/project/flu-dashboard.jpeg",
