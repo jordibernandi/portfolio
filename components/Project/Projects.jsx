@@ -7,6 +7,13 @@ import Project from "./Project";
 // sample data for projects with various categories
 const data = [
   {
+    link: "https://youtu.be/qqor2B5vv8s",
+    categories: ["Python", "ReactJS", "Flask", "NLP", "LLM"],
+    img: "/assets/project/bom-assistant.jpeg",
+    title: "BOM Assistant",
+    description: "Developed an  AI tool for cleaning BOMs and recommending Würth components using agent-based logic and Explainable AI. Secured 2nd place at HackXplore 2025 36-hour challenge."
+  },
+  {
     link: "https://youtu.be/I1zPA81g_rc",
     categories: ["Python", "ReactJS", "Flask", "NLP", "LLM"],
     img: "/assets/project/hotel-recommender.jpeg",

@@ -19,7 +19,7 @@ const journeys = [
     location: "Potsdam, Germany",
     logoUrl: `/assets/journey/experience/commsultAG.png`,
     position: "Software Developer",
-    duration: "May 2022 - Present",
+    duration: "May 2022 - April 2025",
     description: <CommsultAG />
   },
   {
