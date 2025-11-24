@@ -8,7 +8,7 @@ const Apomap = () => {
                 <li>
                     <span className="font-bold">Platform Maintenance & Optimization:</span><br />
                     <span className="inline-block pl-5">
-                        Maintained and improved the performance of the apomap SaaS platform, a digital logistics solution for pharmacy delivery services.
+                        Maintain and improved the performance of the apomap SaaS platform, a digital logistics solution for pharmacy delivery services.
                     </span>
                 </li>
 
@@ -22,19 +22,19 @@ const Apomap = () => {
                 <li>
                     <span className="font-bold">Full-Stack Development (Front-end focused):</span><br />
                     <span className="inline-block pl-5">
-                        Built end-to-end features using JavaScript/TypeScript, React, Next.js, Nest.js, Tailwind CSS, and REST APIs while ensuring clean code and maintainable architecture.
+                        Build end-to-end features using JavaScript/TypeScript, React, Next.js, Nest.js, Tailwind CSS, and REST APIs while ensuring clean code and maintainable architecture.
                     </span>
                 </li>
 
                 <li>
                     <span className="font-bold">Code Quality & Collaboration:</span><br />
                     <span className="inline-block pl-5">
-                        Ensured high-quality delivery through comprehensive code reviews, unit testing with Vitest, and structured workflows using GitLab and Jira.
+                        Ensure high-quality delivery through comprehensive code reviews, unit testing with Vitest, and structured workflows using GitLab and Jira.
                     </span>
                 </li>
                 <li>
                     <span className="font-bold">Collaboration:</span><br />
-                    <span className="inline-block pl-5">Collaborated with colleagues in the Winterberg office while working remotely, ensuring effective communication and teamwork.</span>
+                    <span className="inline-block pl-5">Collaborate with colleagues in the Winterberg office while working remotely, ensuring effective communication and teamwork.</span>
                 </li>
             </ul>
             <div className="flex justify-center xl:justify-start">
