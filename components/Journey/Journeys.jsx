@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion, AnimatePresence } from "framer-motion";
 import Journey from "./Journey";
 import AnimatedText from "../AnimatedText";
+import Apomap from "./Descriptions/Apomap";
 import CommsultAG from "./Descriptions/CommsultAG";
 import CommsultID from "./Descriptions/CommsultID";
 import Userlutions from "./Descriptions/Userlutions";
@@ -12,6 +13,16 @@ import SGU from "./Descriptions/SGU";
 
 const journeys = [
   // experience
+  {
+    type: "experience",
+    company: "apomap GmbH",
+    link: "https://apomap.de/",
+    location: "Winterberg, Germany",
+    logoUrl: `/assets/journey/experience/apomap.png`,
+    position: "Software Developer",
+    duration: "June 2025 - Present",
+    description: <Apomap />
+  },
   {
     type: "experience",
     company: "commsult AG",

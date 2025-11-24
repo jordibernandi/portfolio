@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+
 const Footer = () => {
   return (
     <footer className="py-12 bg-primary">

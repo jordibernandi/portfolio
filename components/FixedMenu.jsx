@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState, useRef } from "react"; // Import useRef
+import { useEffect, useState, useRef } from "react";
 import { CgMenuGridR } from "react-icons/cg";
 import { useMediaQuery } from "react-responsive";
-import { FiMapPin, FiPhoneCall, FiMail } from "react-icons/fi";
+import { FiMapPin, FiMail } from "react-icons/fi";
 
 // components
 import Nav from "./Nav";
@@ -60,7 +60,7 @@ const FixedMenu = () => {
   if (!isMounted) return null;
 
   const handleButtonClick = (event) => {
-    event.stopPropagation(); // Stop event propagation
+    event.stopPropagation(); 
     setShowMenu(!showMenu);
   };
 
@@ -75,7 +75,7 @@ const FixedMenu = () => {
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.2 }}
             className="fixed w-full max-w-md md:max-w-none h-[400px] bottom-40 px-4 pointer-events-auto"
-            ref={menuRef} // Attach the ref to the menu div
+            ref={menuRef}
           >
             <div className="bg-white w-full h-full shadow-custom max-w-[1170px] mx-auto py-12 xl:py-12 px-12 xl:px-32 flex items-center gap-12 rounded-lg">
               <Nav
