@@ -17,7 +17,7 @@ const skills = [
     },
     {
         title: "Data Science",
-        values: ["Data Mining", "Data Analytics", "Data Visualization", "NLP", "LLM", "Machine Learning"]
+        values: ["Data Mining", "Data Analytics", "Data Visualization", "NLP", "LLMs", "Machine Learning"]
     },
 ];
 
