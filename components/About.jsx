@@ -26,10 +26,10 @@ const About = () => {
               Hallo, I'm Jordi! I have several years of hands-on development experience with technologies like Java, JavaScript/TypeScript, Python, SQL/NoSQL, Git, XML, HTML, CSS, and various frameworks.
               <br />
               <br />
-              I specialize in solving complex client-reported issues, implementing new features, and ensuring quality in collaborative environments.
+              My recent MSc in Data Science fundamentally shifted my focus, igniting a deep curiosity for building data-driven applications and tackling new challenges through AI integration and Large Language Models (LLMs).
               <br />
               <br />
-              With a growth mindset, I’ve worked on diverse projects, from front-end to full-stack development. My academic background in information technology and data science has further expanded my technical expertise, allowing me to tackle new challenges with confidence.
+              I leverage this blend of practical development experience and advanced academic knowledge to solve complex client issues, implement innovative features, and ensure high-quality, scalable solutions across the entire stack.
             </p>
             <div className="flex flex-col items-center gap-8 mx-auto xl:w-full xl:justify-between xl:flex-row xl:gap-12 max-w-max xl:mx-0">
               <div className="max-w-max">
