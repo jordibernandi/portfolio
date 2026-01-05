@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
 const socials = [
@@ -11,6 +11,10 @@ const socials = [
     icon: <FaLinkedin />,
     path: "https://www.linkedin.com/in/jordi-bernandi/",
   },
+  {
+    icon: <FaGithub />,
+    path: "https://github.com/jordibernandi",
+  },
 ];
 
 const Socials = ({ containerStyles, iconStyles }) => {
@@ -18,7 +22,7 @@ const Socials = ({ containerStyles, iconStyles }) => {
     <div className={containerStyles}>
       {socials.map((item, index) => {
         return (
-          <Link href={item.path} key={index} className={iconStyles}>
+          <Link href={item.path} key={index} className={iconStyles} target="_blank">
             <span>{item.icon}</span>
           </Link>
         );
