@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between xl:flex-row">
           <Logo light={true} />
           <div className="font-light text-white/70">
-            Copyright &copy; 2025. All rights reserved.
+            Copyright &copy; 2026. All rights reserved.
           </div>
         </div>
       </div>

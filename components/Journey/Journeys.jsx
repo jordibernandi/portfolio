@@ -20,7 +20,7 @@ const journeys = [
     location: "Winterberg, Germany",
     logoUrl: `/assets/journey/experience/apomap.png`,
     position: "Software Developer",
-    duration: "June 2025 - Present",
+    duration: "June 2025 - January 2026",
     description: <Apomap />
   },
   {
