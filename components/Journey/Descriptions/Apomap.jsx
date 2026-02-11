@@ -8,33 +8,33 @@ const Apomap = () => {
                 <li>
                     <span className="font-bold">Platform Maintenance & Optimization:</span><br />
                     <span className="inline-block pl-5">
-                        Maintain and improved the performance of the apomap SaaS platform, a digital logistics solution for pharmacy delivery services.
+                        Maintained and optimized the performance of the apomap SaaS platform, a digital logistics solution for pharmacy delivery services.
                     </span>
                 </li>
 
                 <li>
                     <span className="font-bold">Feature Engineering:</span><br />
                     <span className="inline-block pl-5">
-                        Developed core system features including address suggestions, payment processing & blocking, user and permission management, file import/export workflows, and task/tour event handling.
+                        Engineered core system features including address suggestions, payment processing & blocking, user and permission management, file import/export workflows, and task/tour event handling.
                     </span>
                 </li>
 
                 <li>
                     <span className="font-bold">Full-Stack Development (Front-end focused):</span><br />
                     <span className="inline-block pl-5">
-                        Build end-to-end features using JavaScript/TypeScript, React, Next.js, Nest.js, Tailwind CSS, and REST APIs while ensuring clean code and maintainable architecture.
+                        Built end-to-end features using JavaScript/TypeScript, React, Next.js, Nest.js, Tailwind CSS, and REST APIs while ensuring clean code and maintainable architecture.
                     </span>
                 </li>
 
                 <li>
                     <span className="font-bold">Code Quality & Collaboration:</span><br />
                     <span className="inline-block pl-5">
-                        Ensure high-quality delivery through comprehensive code reviews, unit testing with Vitest, and structured workflows using GitLab and Jira.
+                        Ensured high-quality delivery through comprehensive code reviews, unit testing with Vitest, and structured workflows using GitLab and Jira.
                     </span>
                 </li>
                 <li>
                     <span className="font-bold">Collaboration:</span><br />
-                    <span className="inline-block pl-5">Collaborate with colleagues in the Winterberg office while working remotely, ensuring effective communication and teamwork.</span>
+                    <span className="inline-block pl-5">Collaborated with colleagues in the Winterberg office while working remotely, ensuring effective communication and teamwork.</span>
                 </li>
             </ul>
             <div className="flex justify-center xl:justify-start">
