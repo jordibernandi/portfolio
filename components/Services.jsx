@@ -6,7 +6,7 @@ const services = [
   {
     icon: <MdLanguage />,
     title: "Language",
-    description: `<span class="service-span"><b>English</b> - Fluent</span>, <span class="service-span"><b>German</b> - B1</span>, <span class="service-span"><b>Indonesian</b> - Native</span>`,
+    description: `<span class="service-span"><b>English</b> - Fluent</span>, <span class="service-span"><b>German</b> - B1+</span>, <span class="service-span"><b>Indonesian</b> - Native</span>`,
   },
   {
     icon: <MdSchool />,
