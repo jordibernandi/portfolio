@@ -13,7 +13,7 @@ const skills = [
     },
     {
         title: "Architecture & DevOps",
-        values: ["REST API", "GraphQL API", "Microservices", "GIT", "Docker", "GitHub Actions"]
+        values: ["REST API", "GraphQL API", "Microservices", "GIT", "Docker", "GitHub Actions", "Kafka", "Redis"]
     },
     {
         title: "Data Science",

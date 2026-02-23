@@ -27,7 +27,7 @@ const Apomap = () => {
                 </li>
 
                 <li>
-                    <span className="font-bold">Code Quality & Collaboration:</span><br />
+                    <span className="font-bold">Code Quality:</span><br />
                     <span className="inline-block pl-5">
                         Ensured high-quality delivery through comprehensive code reviews, unit testing with Vitest, and structured workflows using GitLab and Jira.
                     </span>
