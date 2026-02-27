@@ -22,7 +22,7 @@ const CommsultID = () => {
                 <li><span className="font-bold">Key Projects Developed:</span><br />
                     <ul className="pl-5">
                         <li><u>Hotel Software Management System:</u> Developed new features focused on booking, accounting systems (<a href="https://youtu.be/nIJs40OxmqY" target="_blank">demo 1</a>, <a href="https://youtu.be/Ml8uLgmF2z4" target="_blank">demo 2</a>), and <a href="https://youtu.be/L5fvSbqtNOg" target="_blank">product profile website</a>.</li>
-                        <li><u>Admin Dashboard: </u> Developed comprehensive admin dashboards to streamline warehouse management operations.</li>
+                        <li><u>Admin Dashboard:</u> Developed comprehensive admin dashboards to streamline warehouse management operations.</li>
                         <li><u>Prototype R&D:</u> Conducted research and development for a new <a href="https://youtu.be/1o2QryrFfsw" target="_blank">desktop application</a> to create mobile applications without coding. Explored various libraries, approaches, and data architecture solutions.</li>
                     </ul>
                 </li>
