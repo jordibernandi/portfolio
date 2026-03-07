@@ -10,12 +10,16 @@ import Userlutions from "./Descriptions/Userlutions";
 import FHSoest from "./Descriptions/FHSoest";
 import Unima from "./Descriptions/Unima";
 import SGU from "./Descriptions/SGU";
+import PeecAI from "./Descriptions/PeecAI";
+import Wurth from "./Descriptions/Wurth";
+import Exxeta from "./Descriptions/Exxeta";
+import Stads from "./Descriptions/Stads";
 
 const journeys = [
   // experience
   {
     type: "experience",
-    company: "apomap GmbH",
+    institution: "apomap GmbH",
     link: "https://apomap.de/",
     location: "Winterberg, Germany",
     logoUrl: `/assets/journey/experience/apomap.png`,
@@ -25,7 +29,7 @@ const journeys = [
   },
   {
     type: "experience",
-    company: "commsult AG",
+    institution: "commsult AG",
     link: "https://commsult.de/",
     location: "Potsdam, Germany",
     logoUrl: `/assets/journey/experience/commsultAG.png`,
@@ -35,7 +39,7 @@ const journeys = [
   },
   {
     type: "experience",
-    company: "commsult Indonesia",
+    institution: "commsult Indonesia",
     link: "https://commsult.id/",
     location: "Tangerang, Indonesia",
     logoUrl: "/assets/journey/experience/commsultID.png",
@@ -45,7 +49,7 @@ const journeys = [
   },
   {
     type: "experience",
-    company: "Userlutions GmbH",
+    institution: "Userlutions GmbH",
     link: "https://userlutions.com/",
     location: "Berlin, Germany",
     logoUrl: "/assets/journey/experience/userlutions.png",
@@ -60,7 +64,7 @@ const journeys = [
     link: "https://www.uni-mannheim.de/",
     location: "Mannheim, Germany",
     logoUrl: "/assets/journey/education/unima.png",
-    qualification: "Master's Degree in Data Science",
+    position: "Master's Degree in Data Science",
     duration: "2022 - 2025",
     description: <Unima />
   },
@@ -70,7 +74,7 @@ const journeys = [
     link: "https://sgu.ac.id/",
     location: "Tangerang, Indonesia",
     logoUrl: "/assets/journey/education/sgu.png",
-    qualification: "Bachelor's Degree in Information Technology",
+    position: "Bachelor's Degree in Information Technology",
     duration: "2014 - 2018",
     description: <SGU />
   },
@@ -80,9 +84,50 @@ const journeys = [
     link: "https://www.fh-swf.de/de/",
     location: "Soest, Germany",
     logoUrl: "/assets/journey/education/fhsoest.png",
-    qualification: "Bachelor's Degree in Industrial Engineering",
+    position: "Bachelor's Degree in Industrial Engineering",
     duration: "2017 - 2017",
     description: <FHSoest />
+  },
+  // hackathon
+  {
+    type: "hackathon",
+    institution: "{Tech: Europe} - Peec AI Challenge",
+    link: "#",
+    location: "Berlin, Germany",
+    logoUrl: "/assets/journey/hackathon/peecai.png",
+    position: "Winner",
+    duration: "2025",
+    description: <PeecAI />
+  },
+  {
+    type: "hackathon",
+    institution: "HackXplore - Würth Elektronik Challenge",
+    link: "#",
+    location: "Karlsruhe, Germany",
+    logoUrl: "/assets/journey/hackathon/wurth.png",
+    position: "First Runner-Up",
+    duration: "2025",
+    description: <Wurth />
+  },
+  {
+    type: "hackathon",
+    institution: "QHack - Exxeta Challenge",
+    link: "#",
+    location: "Mannheim, Germany",
+    logoUrl: "/assets/journey/hackathon/exxeta.png",
+    position: "First Runner-Up",
+    duration: "2025",
+    description: <Exxeta />
+  },
+  {
+    type: "hackathon",
+    institution: "STADS - Data Bootcamp",
+    link: "#",
+    location: "Mannheim, Germany",
+    logoUrl: "/assets/journey/hackathon/stads.png",
+    position: "Winner",
+    duration: "2024",
+    description: <Stads />
   },
 ];
 
@@ -91,7 +136,7 @@ const Journeys = () => {
     <section className="pt-12 pb-12" id="journey">
       <div className="container mx-auto">
         <AnimatedText
-          text="My Professional Journey"
+          text="My Journey"
           textStyles="h2 mb-[30px] text-center"
         />
         <Tabs
@@ -101,8 +146,9 @@ const Journeys = () => {
           <TabsList className="max-w-max mb-[30px]">
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
+            <TabsTrigger value="hackathon">Hackathon</TabsTrigger>
           </TabsList>
-          {["experience", "education"].map(value => (
+          {["experience", "education", "hackathon"].map(value => (
             <TabsContent key={value} value={value} className="w-full">
               <AnimatePresence>
                 <motion.div
