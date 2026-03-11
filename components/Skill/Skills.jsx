@@ -9,7 +9,7 @@ const skills = [
     },
     {
         title: "Frameworks & Libraries",
-        values: ["React", "Next.js", "Angular", "Node.js", "Prisma", "Spring Boot", "Flask", "Laravel"]
+        values: ["React", "Next.js", "Angular", "Vue", "Node.js", "Prisma", "Spring Boot", "Laravel", "Flask", "FastAPI"]
     },
     {
         title: "Architecture & DevOps",
