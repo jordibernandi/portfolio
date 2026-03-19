@@ -8,7 +8,7 @@ const CommsultID = () => {
                 <li>
                     <span className="font-bold">Full Stack Development:</span><br />
                     <span className="inline-block pl-5">
-                        Utilized JavaScript, TypeScript, ReactJS, ExpressJS, NodeJS, MongoDB, PostgreSQL, REST API, HTML, and CSS.
+                        Utilized JavaScript, TypeScript, React, Node.js (Express.js), MongoDB, PostgreSQL, REST API, Jest, HTML, and CSS.
                     </span>
                 </li>
                 <li>

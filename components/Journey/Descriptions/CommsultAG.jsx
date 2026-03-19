@@ -3,7 +3,7 @@ const CommsultAG = () => {
         <ul className="ml-4 text-left list-disc list-inside">
             <li>
                 <span className="font-bold">Project Assignment:</span><br />
-                <span className="inline-block pl-5">Supported the development of an ERP system.</span>
+                <span className="inline-block pl-5">Supported the development of ERP systems.</span>
             </li>
             <li>
                 <span className="font-bold">Issue Resolution:</span><br />
@@ -11,7 +11,7 @@ const CommsultAG = () => {
             </li>
             <li>
                 <span className="font-bold">Daily Technologies:</span><br />
-                <span className="inline-block pl-5">Worked extensively with Java OOP, OracleDB, MySQL, XML, JavaScript, HTML, CSS and ReactJS.</span>
+                <span className="inline-block pl-5">Worked extensively with Java OOP, PostgreSQL, OracleDB, MySQL, REST API, XML, JavaScript, TypeScript, HTML, CSS, Angular, and React.</span>
             </li>
             <li>
                 <span className="font-bold">Collaboration:</span><br />

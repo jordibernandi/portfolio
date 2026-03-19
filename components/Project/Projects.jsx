@@ -8,28 +8,28 @@ import Project from "./Project";
 const data = [
   {
     link: "https://youtu.be/qqor2B5vv8s",
-    categories: ["Python", "ReactJS", "Flask", "NLP", "LLMs"],
+    categories: ["Python", "React", "Flask", "NLP", "LLMs"],
     img: "/assets/project/bom-assistant.jpeg",
     title: "BOM Assistant",
     description: "Developed an  AI tool for cleaning BOMs and recommending Würth components using agent-based logic and Explainable AI. Secured 2nd place at HackXplore 2025 36-hour challenge."
   },
   {
     link: "https://youtu.be/I1zPA81g_rc",
-    categories: ["Python", "ReactJS", "Flask", "NLP", "LLMs"],
+    categories: ["Python", "React", "Flask", "NLP", "LLMs"],
     img: "/assets/project/hotel-recommender.jpeg",
     title: "Hotel Recommender System",
-    description: "Developed a natural language hotel recommender in the 36-hour Makeathon (CHECK24), using AI agents for preference extraction (Entity Matching + Schema Mapping) with Python, Flask, and ReactJS."
+    description: "Developed a natural language hotel recommender in the 36-hour Makeathon (CHECK24), using AI agents for preference extraction (Entity Matching + Schema Mapping) with Python, Flask, and React."
   },
   {
     link: "https://youtu.be/Nqmb_towOLI",
-    categories: ["Python", "ReactJS", "Flask", "NLP", "LLMs"],
+    categories: ["Python", "React", "Flask", "NLP", "LLMs"],
     img: "/assets/project/consultant-recommender.jpeg",
     title: "Consultant Recommender System",
-    description: "Developed a consultant recommender system in the 24-hour Q-Hack (Exxeta), earning 2nd place in the challenge. Used multi-agent LLMs to analyze and prioritize project features, leveraging Python, Flask, and ReactJS"
+    description: "Developed a consultant recommender system in the 24-hour Q-Hack (Exxeta), earning 2nd place in the challenge. Used multi-agent LLMs to analyze and prioritize project features, leveraging Python, Flask, and React"
   },
   {
     link: "https://youtu.be/kMFi3mTtCaA",
-    categories: ["Python", "Flask", "Visualisation", "Analysis", "ReactJS", "LLMs"],
+    categories: ["Python", "Flask", "Visualisation", "Analysis", "React", "LLMs"],
     img: "/assets/project/flu-dashboard.jpeg",
     title: "Flu Analytical Dashboard",
     description: "Developed an analytical dashboard displaying vaccination rates across German regions for the STADS Datathon 24 hours challenge (CGM), featuring analytical graphs and LLMs-driven analysis with predictive insights."
@@ -42,7 +42,7 @@ const data = [
   },
   {
     link: "https://github.com/jordibernandi/master_thesis_MMDS",
-    categories: ["Python", "JavaScript", "ReactJS", "SQL", "Prisma", "NLP", "LLMs", "Visualisation", "Analysis"],
+    categories: ["Python", "JavaScript", "React", "SQL", "Prisma", "NLP", "LLMs", "Visualisation", "Analysis"],
     img: "/assets/project/political-content.jpeg",
     title: "Decoding YouTube Political Content",
     description: "Created a novel dataset of 10,000 YouTube political transcripts, presented it via a web application, and conducted topic modelling using LLMs. Utilised Python, speech recognition, speaker diarization, embeddings."
@@ -69,15 +69,15 @@ const data = [
     description: "Developed a model for the STADS Datathon 24 hours challenge (MSG Group) to predict Dow Jones fluctuations by analysing news articles and key factors, with results displayed on a user-friendly interface. Utilised Python, Streamlit, embeddings, linear regression, and LLMs."
   },
   {
-    categories: ["Python", "JavaScript", "ReactJS", "NLP"],
+    categories: ["Python", "JavaScript", "React", "NLP"],
     title: "Symptom Checker AI Chatbot",
-    description: "Developed an AI chatbot to check symptoms for the STADS Datathon 24 hours challenge (PHOENIX Group) by integrating a disease database with LLMs, leveraging ReactJS, Flask, and embedding techniques."
+    description: "Developed an AI chatbot to check symptoms for the STADS Datathon 24 hours challenge (PHOENIX Group) by integrating a disease database with LLMs, leveraging React, Flask, and embedding techniques."
   },
   {
     link: "https://github.com/jordibernandi/warehouse_system",
-    categories: ["JavaScript", "ReactJS", "NodeJS", "NoSQL"],
+    categories: ["JavaScript", "React", "NodeJS", "NoSQL"],
     title: "Warehouse Management System",
-    description: "Built a warehouse management system using ReactJS, ExpressJS, and MongoDB to support a business. Included serial number tracking to verify product authenticity, reducing fraudulent warranty claims and boosting customer trust."
+    description: "Built a warehouse management system using React, Node.js (Express.js), and MongoDB to support a business. Included serial number tracking to verify product authenticity, reducing fraudulent warranty claims and boosting customer trust."
   },
   {
     link: "https://github.com/jordibernandi/church_registration_system",

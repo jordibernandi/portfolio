@@ -7,7 +7,7 @@ const Userlutions = () => {
             <ul className="ml-4 text-left list-disc list-inside">
                 <li>
                     <span className="font-bold">Development and Redesign:</span><br />
-                    <span className="inline-block pl-5">Contributed to the development and redesign of Crowdtesting Services at <a href="https://rapidusertests.com" target="_blank">rapidusertests.com</a> using HTML, CSS, JavaScript, and Laravel PHP framework.</span>
+                    <span className="inline-block pl-5">Contributed to the development and redesign of Crowdtesting Services at <a href="https://rapidusertests.com" target="_blank">rapidusertests.com</a> using HTML, CSS, JavaScript, REST API, and Laravel PHP framework.</span>
                 </li>
                 <li>
                     <span className="font-bold">Collaboration:</span><br />

@@ -22,7 +22,7 @@ const Apomap = () => {
                 <li>
                     <span className="font-bold">Full-Stack Development:</span><br />
                     <span className="inline-block pl-5">
-                        Built end-to-end features using JavaScript/TypeScript, React, Next.js, Nest.js, Tailwind CSS, and REST APIs while ensuring clean code and maintainable architecture.
+                        Built end-to-end features using TypeScript, React, Next.js, Node.js (NestJS), Tailwind CSS, WebSocket, and REST API while ensuring clean code and maintainable architecture.
                     </span>
                 </li>
 
